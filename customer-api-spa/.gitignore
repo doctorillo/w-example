@@ -1,0 +1,9 @@
+out/
+node_modules/
+dist/
+.linaria-cache/
+.next/
+.cache/
+.vscode/
+yarn-error.log
+/.next.tar.gz

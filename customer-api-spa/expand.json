@@ -1,0 +1,257 @@
+{
+  "version": 1,
+  "partitions": [
+    {
+      "topic": "watch-registry-properties-stamp",
+      "partition": 0,
+      "replicas": [
+        2,
+        0,
+        1
+      ],
+      "log_dirs": [
+        "any",
+        "any",
+        "any"
+      ]
+    },
+    {
+      "topic": "registry-parties-ms-out",
+      "partition": 0,
+      "replicas": [
+        2,
+        0,
+        1
+      ],
+      "log_dirs": [
+        "any",
+        "any",
+        "any"
+      ]
+    },
+    {
+      "topic": "api-partners-in",
+      "partition": 0,
+      "replicas": [
+        2,
+        1,
+        0
+      ],
+      "log_dirs": [
+        "any",
+        "any",
+        "any"
+      ]
+    },
+    {
+      "topic": "watch-registry-properties-queue",
+      "partition": 0,
+      "replicas": [
+        2,
+        1,
+        0
+      ],
+      "log_dirs": [
+        "any",
+        "any",
+        "any"
+      ]
+    },
+    {
+      "topic": "interlook-sync-ms-in",
+      "partition": 0,
+      "replicas": [
+        2,
+        0,
+        1
+      ],
+      "log_dirs": [
+        "any",
+        "any",
+        "any"
+      ]
+    },
+    {
+      "topic": "watch-inter-look-queue-0",
+      "partition": 0,
+      "replicas": [
+        1,
+        2,
+        0
+      ],
+      "log_dirs": [
+        "any",
+        "any",
+        "any"
+      ]
+    },
+    {
+      "topic": "registry-parties-ms-in",
+      "partition": 0,
+      "replicas": [
+        0,
+        2,
+        1
+      ],
+      "log_dirs": [
+        "any",
+        "any",
+        "any"
+      ]
+    },
+    {
+      "topic": "watch-inter-look-queue",
+      "partition": 0,
+      "replicas": [
+        2,
+        1,
+        0
+      ],
+      "log_dirs": [
+        "any",
+        "any",
+        "any"
+      ]
+    },
+    {
+      "topic": "operation-partner-ms-in",
+      "partition": 0,
+      "replicas": [
+        0,
+        1,
+        2
+      ],
+      "log_dirs": [
+        "any",
+        "any",
+        "any"
+      ]
+    },
+    {
+      "topic": "operation-provider-ms-in",
+      "partition": 0,
+      "replicas": [
+        1,
+        2,
+        0
+      ],
+      "log_dirs": [
+        "any",
+        "any",
+        "any"
+      ]
+    },
+    {
+      "topic": "watch-inter-look-prices-queue",
+      "partition": 0,
+      "replicas": [
+        2,
+        1,
+        0
+      ],
+      "log_dirs": [
+        "any",
+        "any",
+        "any"
+      ]
+    },
+    {
+      "topic": "api-customer-in",
+      "partition": 0,
+      "replicas": [
+        2,
+        1,
+        0
+      ],
+      "log_dirs": [
+        "any",
+        "any",
+        "any"
+      ]
+    },
+    {
+      "topic": "operation-customer-ms-in",
+      "partition": 0,
+      "replicas": [
+        2,
+        0,
+        1
+      ],
+      "log_dirs": [
+        "any",
+        "any",
+        "any"
+      ]
+    },
+    {
+      "topic": "watch-registry-parties-stamp",
+      "partition": 0,
+      "replicas": [
+        0,
+        1,
+        2
+      ],
+      "log_dirs": [
+        "any",
+        "any",
+        "any"
+      ]
+    },
+    {
+      "topic": "watch-provider-properties-queue",
+      "partition": 0,
+      "replicas": [
+        1,
+        2,
+        0
+      ],
+      "log_dirs": [
+        "any",
+        "any",
+        "any"
+      ]
+    },
+    {
+      "topic": "registry-properties-ms-in",
+      "partition": 0,
+      "replicas": [
+        2,
+        0,
+        1
+      ],
+      "log_dirs": [
+        "any",
+        "any",
+        "any"
+      ]
+    },
+    {
+      "topic": "watch-registry-parties-queue",
+      "partition": 0,
+      "replicas": [
+        2,
+        1,
+        0
+      ],
+      "log_dirs": [
+        "any",
+        "any",
+        "any"
+      ]
+    },
+    {
+      "topic": "watch-registry-orders-queue",
+      "partition": 0,
+      "replicas": [
+        1,
+        2,
+        0
+      ],
+      "log_dirs": [
+        "any",
+        "any",
+        "any"
+      ]
+    }
+  ]
+}

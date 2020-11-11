@@ -1,4 +1,4 @@
-### This example contains 1 of 12 microservices -"parties-ms" and 1 of 2 API gateways - "customer-api"
+### This example contains 1 of 12 microservices -"parties-ms" and 1 of 2 APIs gateways - "customer-api"
 
 ### Project structure
 

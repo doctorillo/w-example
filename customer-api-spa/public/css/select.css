@@ -1,0 +1,38 @@
+.vfx-container {
+    display: flex;
+    width: 100%;
+    border: none;
+}
+
+.vfx__control {
+    border: none;
+    width: 100%;
+    background-color: #f2f5fb;
+}
+
+.vfx__value-container {
+    width: 100%;
+    background-color: #f2f5fb;
+}
+
+.vfx__indicators {
+
+}
+
+.vfx__menu {
+    width: 100%;
+    border: none;
+    background-color: white;
+}
+
+.vfx__menu-list {
+    width: 100%;
+    border: none;
+    background-color: white;
+}
+
+.vfx__option {
+    width: 100%;
+    border: none;
+    background-color: white;
+}

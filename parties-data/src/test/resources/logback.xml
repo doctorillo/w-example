@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration scan="true" scanPeriod="5 seconds">
+    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>
+                [%thread] %date{HH:mm:ss} %class.%method - %msg%n
+            </pattern>
+        </encoder>
+    </appender>
+    <logger name="bookingtour" level="debug">
+        <appender-ref ref="console"/>
+    </logger>
+    <logger name="io.finch" level="error">
+        <appender-ref ref="console"/>
+    </logger>
+    <logger name="akka.actor" level="error">
+        <appender-ref ref="console"/>
+    </logger>
+    <logger name="com.twitter" level="error">
+        <appender-ref ref="console"/>
+    </logger>
+    <logger name="com.zaxxer.hikari" level="error">
+        <appender-ref ref="console"/>
+    </logger>
+</configuration>

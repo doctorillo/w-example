@@ -1,0 +1,17 @@
+# Default ignored files
+/.idea/shelf/
+/.idea/workspace.xml
+*.rar
+/.bloop/
+/.bsp/
+/.metals/
+/.next/
+
+# Project exclude paths
+/.idea/
+/target/
+
+# Datasource local storage ignored files
+/.idea/dataSources/
+dataSources.local.xml
+*.lua

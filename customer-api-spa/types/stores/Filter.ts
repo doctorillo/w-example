@@ -1,0 +1,1 @@
+export type Filter<A> = (exp: string) => (item: A) => boolean;

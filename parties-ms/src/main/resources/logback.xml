@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration>
+<configuration scan="true" scanPeriod="5 seconds">
+    <jmxConfigurator/>
+    <property resource="deployment.properties"/>
+    <appender name="CONSOLE_APPENDER" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>
+                %d{HH:mm:ss.SSS} %-5level - PARTY - %msg%n
+            </pattern>
+        </encoder>
+    </appender>
+    <appender name="ASYNC_CONSOLE" class="ch.qos.logback.classic.AsyncAppender">
+        <appender-ref ref="CONSOLE_APPENDER"/>
+    </appender>
+    <!--<appender name="GELF_APPENDER" class="biz.paluch.logging.gelf.logback.GelfLogbackAppender">
+        <host>udp:136.243.43.176</host>
+        <port>2201</port>
+        <version>1.1</version>
+        <facility>party-ms</facility>
+        <extractStackTrace>true</extractStackTrace>
+        <filterStackTrace>true</filterStackTrace>
+        <mdcProfiling>false</mdcProfiling>
+        <timestampPattern>yyyy-MM-dd HH:mm:ss,SSS</timestampPattern>
+        <maximumMessageSize>8192</maximumMessageSize>
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>INFO</level>
+        </filter>
+    </appender>
+    <appender name="ASYNC_GELF" class="ch.qos.logback.classic.AsyncAppender">
+        <appender-ref ref="GELF_APPENDER"/>
+    </appender>-->
+    <appender name="FILE_APPENDER" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_HOME}/w-parties-ms.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+            <fileNamePattern>${LOG_HOME}/w-parties-ms.%i.log</fileNamePattern>
+            <minIndex>1</minIndex>
+            <maxIndex>10</maxIndex>
+        </rollingPolicy>
+        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <maxFileSize>100MB</maxFileSize>
+        </triggeringPolicy>
+        <encoder>
+            <pattern>
+                %d{HH:mm:ss.SSS} %-5level - PARTY - %msg%n
+            </pattern>
+        </encoder>
+    </appender>
+    <appender name="ASYNC_FILE" class="ch.qos.logback.classic.AsyncAppender">
+        <appender-ref ref="FILE_APPENDER"/>
+    </appender>
+    <logger name="bookingtour" level="info">
+        <!--<appender-ref ref="ASYNC_GELF"/>-->
+        <appender-ref ref="ASYNC_FILE"/>
+    </logger>
+    <logger level="error">
+        <appender-ref ref="ASYNC_CONSOLE"/>
+        <!--<appender-ref ref="ASYNC_GELF"/>-->
+        <appender-ref ref="ASYNC_FILE"/>
+    </logger>
+</configuration>

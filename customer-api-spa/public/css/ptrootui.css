@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'PT Root UI';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 300;
+    src: local('PT Root UI Light'), url('/fonts/PT_Root_UI_Light.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'PT Root UI';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+    src: local('PT Root UI'), url('/fonts/PT_Root_UI_Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'PT Root UI';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 500;
+    src: local('PT Root UI Medium'), url('/fonts/PT_Root_UI_Medium.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'PT Root UI';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 700;
+    src: local('PT Root UI Bold'), url('/fonts/PT_Root_UI_Bold.woff') format('woff');
+}
